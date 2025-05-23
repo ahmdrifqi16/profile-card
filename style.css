@@ -4,7 +4,9 @@ body {
   place-content: center;
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+
   background: #c4c3c2;
   font-family: "Poppins", sans-serif;
 }
@@ -299,4 +301,57 @@ a {
   color: white;
   font-family: "Rubik", sans-serif;
   transition: color 600ms;
+}
+
+@media screen and (max-width: 600px) {
+  .flip-card {
+    width: 90vw;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    padding: 15px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .flip-card-front h2 {
+    font-size: 20px;
+  }
+
+  .flip-card-front p {
+    font-size: 13px;
+  }
+
+  .flip-card-back h2 {
+    font-size: 20px;
+  }
+
+  .skill {
+    font-size: 13px;
+  }
+
+  .icon span {
+    height: 40px;
+    width: 40px;
+  }
+
+  .icon span i {
+    font-size: 16px;
+  }
+
+  .tooltip {
+    font-size: 10px;
+  }
+
+  body {
+    overflow: auto;
+    padding: 20px;
+    height: auto;
+  }
 }
