@@ -1,12 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Center content */
+
 body {
   display: grid;
   place-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-
+  overflow-x: hidden; /* Ini penting */
   background: #c4c3c2;
   font-family: "Poppins", sans-serif;
 }
@@ -18,13 +21,15 @@ body {
 
 /* Flip card styling */
 .flip-card {
-  width: 320px;
+  width: 100%;
+  max-width: 320px; /* Batasi ukuran maksimal */
   height: 500px;
   transform-style: preserve-3d;
   transition: transform 0.7s ease-in-out;
   position: relative;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+  margin: 0 auto; /* pastikan center */
 }
 
 /* Flip on hover */
@@ -354,4 +359,11 @@ a {
     padding: 20px;
     height: auto;
   }
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
