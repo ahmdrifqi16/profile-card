@@ -303,7 +303,7 @@ a {
   transition: color 600ms;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .flip-card {
     width: 90vw;
     height: auto;
